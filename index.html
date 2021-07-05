@@ -13,6 +13,9 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/db3782c531.js" crossorigin="anonymous"></script>
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css">
     <title>T E N E S I N</title>
@@ -130,10 +133,10 @@
                 <div class="row justify-content-md-center" style="color: white;">
                     <div class="col-md-6">
                       <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
-                        <strong>makasii yaa!!</strong> kritik dan saran kalian bakal jadi bahan evaluasi gw buat kedepannya.
+                        <strong>thanks!!</strong> kritik dan saran kalian akan jadi bahan evaluasi gw buat kedepannya.
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                       </div>
-                        <form name="form-web">
+                        <form name="form-web" autocomplete="off">
                             <div class="mb-3">
                               <label for="name" class="form-label">From</label>
                               <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
@@ -146,7 +149,7 @@
                                 <label for="exampleFormControlTextarea1" class="form-label">Message</label>
                                 <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
                               </div>
-                            <button type="submit" class="btn btn-primary btn-kirim">Submit</button>
+                            <button type="submit" class="btn btn-outline-light btn-kirim">Submit</button>
                             <button class="btn btn-primary btn-loading d-none" type="button" disabled>
                               <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
                               tunggu yee
@@ -161,7 +164,8 @@
 
     <!-- footer -->
     <footer style="background-color:white;" class ="text-dark text-center pb-5" >
-        <p>Created by<a href="https://www.instagram.com/ishaqyudha_/" class="text-dark fw-bold" > <i class="bi bi-instagram"></i> ishaqyudha_</a></p>
+        <p>Created by<a href="https://www.instagram.com/ishaqyudha_/" target="blank" class="text-dark fw-bold" > <i class="bi bi-instagram"></i> ishaqyudha_</a></p>
+       
     </footer>
     <!-- akhir footer -->
 
@@ -178,7 +182,7 @@
   <script>
     gsap.registerPlugin(TextPlugin);
     gsap.from('.navbar', { duration: 1.5, y: '-100%', opacity:0, ease: 'bounce'});
-    gsap.to('.lead', {duration: 2, delay: 1, text: 'Student  |  Java |  Frontend'});
+    gsap.to('.lead', {duration: 2, delay: 1, text: 'Student <i class="far fa-user logoStudent"></i> |  Java <i class="fab fa-java logoJava"></i> |  Frontend <i class="fab fa-js logoJS"></i>'});
   </script>
 
   <script>
