@@ -1,10 +1,10 @@
 body {
-    min-height: 3000px;
+    min-height: 3500px;
 }
 
 .jumbotron {
     padding-top: 7rem;
-    background-color: #FBFBFB;
+    background-color: #f3f4f5;
 }
 
 #projects {
@@ -15,15 +15,70 @@ section {
     padding-top: 5rem;
 }
 
-
-.logoJava {
-    font-size: 25px;
+.hobbies img {
+    size: 3rem;
 }
 
-.logoJS {
-    font-size: 25px;
+.hobbies .container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
 }
 
-.logoStudent {
-    font-size: 25px;
+.hobbies .container .cards {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #FBFBFB;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.hobbies .container .cards:hover {
+    height: 420px;
+}
+
+.hobbies .container .cards .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hobbies .container .cards .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.hobbies .container .cards .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.hobbies .container .cards:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+#hobbies {
+    background-color: #000;
 }
